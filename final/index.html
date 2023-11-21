@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta name="theme-color" content="#1e1043"> -->
+  <meta name="theme-color" content="#000">
+  <meta name="msapplication-navbutton-color" content="#000">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="Uklon">
+  <link rel="shortcut icon" href="img/logo.svg" />
+  <title>Uklon</title>
+  <!-- ===========CCЫЛКИ================= -->
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/style-min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="fonts/fonts.css">
+
+  <script defer src="js/script.js"></script>
+
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW({
+      live: true
+    }).init();
+  </script>
+
+</head>
+
+<body>
+  <div id="mobile_menu">
+    <div class="menu_heading">
+      <div class="heading">
+        <h3>Menu</h3>
+      </div>
+      <div class="close_menu" id="close_menu"></div>
+    </div>
+    <ul>
+      <li><a href="#main_banner">Главная</a></li>
+      <li><a href="#cards_section">Почему мы</a></li>
+      <li><a href="#promo_section">Акции</a></li>
+      <li><a href="#questions_section">FAQ</a></li>
+      <li><a href="#contacts_section">Контакты</a></li>
+    </ul>
+  </div>
+  <div id="white_bg"></div>
+  <div id="scroll-percentage">
+    <div class="percentage"></div>
+  </div>
+
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <div class="container">
+      <div class="wow fadeInUp logo">
+        <a href="#">
+          <img src="img/logo.svg" alt="">
+        </a>
+      </div>
+      <div class="wow fadeInUp desktop-menu df">
+        <ul class="df">
+          <li><a href="#main_banner">Главная</a></li>
+          <li><a href="#cards_section">Почему мы</a></li>
+          <li><a href="#promo_section">Акции</a></li>
+          <li><a href="#questions_section">FAQ</a></li>
+          <li><a href="#contacts_section">Контакты</a></li>
+        </ul>
+      </div>
+      <div id="language" class="wow fadeInUp language df">
+        <div class="selector">
+          RU <span><img class="language_arrow" src="img/language_arrow.svg" alt=""></span>
+        </div>
+        <div class="options">
+          <a href="/uz" class="option">UZ</a>
+          <a href="#" class="option">RU</a>
+        </div>
+      </div>
+      <div class="menu_burger wow fadeInUp" id="open_menu">
+        <img src="img/menu_burger.svg" alt="">
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="main_banner" class="banner df">
+      <img class="banner_car" src="./img/banner_car.png" alt="">
+      <div class="container">
+        <div class="banner_text wow fadeInUp">
+          <h1>Становитесь водителем <br>
+            <span class="special">Uklon</span> и зарабатывайте <br>
+            уже сейчас!
+          </h1>
+          <img class="banner_car_mobile" src="./img/banner_car.png" alt="">
+          <div class="banner_btns">
+            <a href="#contacts_section">Оставить заявку</a>
+          </div>
+        </div>
+    </section>
+    <section class="cards" id="cards_section">
+      <img class="left_line" src="img/svg.svg" alt="">
+      <div class="container">
+        <div class="cards_title wow fadeInUp">
+          <h2>Почему нас <span class="special">выбирают</span></h2>
+        </div>
+        <div class="cards_wrapper df">
+          <div class="cards_left cards_div">
+            <div class="card df wow fadeInUp">
+              <img src="img/Vector.svg" alt="">
+              <div class="card_text">
+                <h3>Свободный график</h3>
+                <p>Выбирайте рабочее время
+                  самостоятельно и зарабатывайте <br>
+                  когда вам удобно</p>
+              </div>
+            </div>
+            <div class="card df wow fadeInUp" data-wow-delay="0.2s">
+              <img src="img/Group.svg" alt="">
+              <div class="card_text">
+                <h3>Моментальные выплаты</h3>
+                <p>Деньги за заказ сразу поступают на
+                  вашу карту без задержек и
+                  скрытых процентов</p>
+              </div>
+            </div>
+          </div>
+          <div class="cards_devider"></div>
+          <div class="cards_right cards_div">
+            <div class="card df wow fadeInUp">
+              <img src="img/Group 38.svg" alt="">
+              <div class="card_text">
+                <h3>Стабильный заработок</h3>
+                <p>Система бонусов и гарантированные
+                  заказы позволяют иметь стабильный
+                  заработок на своем автомобиле</p>
+              </div>
+            </div>
+            <div class="card df wow fadeInUp" data-wow-delay="0.2s">
+              <img src="img/Group (1).svg" alt="">
+              <div class="card_text">
+                <h3>Бонусы за каждую поездку</h3>
+                <p>Постоянные акции и бонусы,
+                  получайте до 300.000 сум за день</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img class="right_line" src="img/svg (1).svg" alt="">
+    </section>
+    <section class="promo" id="promo_section">
+      <div class="container">
+        <div class="promo_title wow fadeInUp">
+          <h2><span class="special">Акции</span> от компании</h2>
+        </div>
+        <div class="promo_wrapper df wow fadeInUp">
+          <div class="promo_div">
+            <img class="promo_img" src="img/img (1).png" alt="">
+            <p class="promo_date">4 ноября 2023</p>
+            <h3 class="promo_heading special">
+              Получайте до 4 миллионов сум
+              за брендирование своего авто
+            </h3>
+            <a class="promo_btn df" href="https://telegra.ph/Poluchajte-do-4-millionov-sum-za-brendirovanie-svoego-avto-11-21">Читать</a>
+          </div>
+          <div class="promo_div">
+            <img class="promo_img" src="img/img (2).png" alt="">
+            <p class="promo_date">5 октября 2023</p>
+            <h3 class="promo_heading special">
+              Гарантированные бонусы за
+              выполненные заказы
+            </h3>
+            <a class="promo_btn df" href="https://telegra.ph/Garantirovannye-bonusy-za-vypolnennye-zakazy-11-21">Читать</a>
+          </div>
+          <div class="promo_div">
+            <img class="promo_img" src="img/img (3).png" alt="">
+            <p class="promo_date">1 ноября 2023</p>
+            <h3 class="promo_heading special">
+              Дополнительные бонусы от
+              Uklon Partner
+            </h3>
+            <a class="promo_btn df" href="https://t.me/UklonPartner_uz">Читать</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="telegram">
+      <div class="container">
+        <h3 class="telegram_heading wow fadeInUp">За проведением новых бонусов, акций <br>
+          и розыгрышей следи за нами в нашем <span class="special">Телеграм</span> канале
+        </h3>
+        <a class="telegram_btn df wow fadeInUp" href="https://t.me/UklonPartner_uz">Присоединиться</a>
+      </div>
+    </section>
+    <section class="questions" id="questions_section">
+      <div class="container">
+        <div class="questions_title df wow fadeInUp">
+          <h2><span class="special">Ответы</span> на вопросы</h2>
+        </div>
+        <div class="accordion_div">
+          <div class="accordion-wrapper wow fadeInUp">
+            <label class="accordion-btn df">
+              <h2>Сколько в среднем можно заработать водитель?</h2>
+              <div class="icon">
+                <div class="before"></div>
+                <div class="after"></div>
+              </div>
+            </label>
+            <div class="accordion">
+              <div class="content">
+                <p>Заработок партнера напрямую зависит от количества выполненных заказов. У вас есть возможность
+                  получать чаевые и бонусы.
+                  В среднем за 1 смену вы можете заработать от 400.000 сум</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-wrapper wow fadeInUp">
+            <label class="accordion-btn df">
+              <h2>Как брать заказы?</h2>
+              <div class="icon">
+                <div class="before"></div>
+                <div class="after"></div>
+              </div>
+            </label>
+            <div class="accordion">
+              <div class="content">
+                <p>Заказ можно принять в автоматическом режиме или вручную – из Эфира. Заказы могут быть наличными и
+                  безналичными. В приложении есть гибкая система фильтров, чтобы получать заказы, которые вас
+                  интересуют.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-wrapper wow fadeInUp">
+            <label class="accordion-btn df">
+              <h2>Какие авто подходят для работы?</h2>
+              <div class="icon">
+                <div class="before"></div>
+                <div class="after"></div>
+              </div>
+            </label>
+            <div class="accordion">
+              <div class="content">
+                <p>К сотрудничеству допускаются чистые снаружи и внутри авто, без коррозии и повреждений кузова, на
+                  сезонных и не сношеных шинах, не старше 2000-го года, не с кузовом «купе». За детальной информацией
+                  обращайтесь в офис в вашем городе.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contacts" id="contacts_section">
+      <div class="container">
+        <div class="questions_title df wow fadeInUp">
+          <h2><span class="special">Наши</span> контакты</h2>
+        </div>
+        <div class="form_wrapper df">
+          <div class="arrow">
+            <img src="img/svg (3).svg" alt="">
+          </div>
+          <div class="form_div">
+            <h2 class="form_title wow fadeInUp">
+              Начните сотрудничество с <span class="special">Uklon Partner</span>
+              <br>уже сейчас
+            </h2>
+            <div class="info df wow fadeInUp">
+              <div class="icon">
+                <img src="img/svg (4).svg" alt="">
+              </div>
+              <p>Узбекистан. г.Ташкент, <br>
+                Яшнабадский район</p>
+            </div>
+            <div class="info df wow fadeInUp">
+              <div class="icon">
+                <img src="img/svg (5).svg" alt="">
+              </div>
+              <p>+998 78 113 34 43</p>
+            </div>
+            <div class="info df wow fadeInUp">
+              <div class="icon">
+                <img src="img/svg (6).svg" alt="">
+              </div>
+              <p>uklondriverpartner@gmail.com</p>
+            </div>
+            <form action="post" class="wow fadeInUp" id="user_form">
+              <label class="title">Регистрация</label>
+              <div class="inputs">
+                <input autocomplete="off" placeholder="Имя" type="text" name="name">
+                <input autocomplete="off" placeholder="Номер телефона" type="phone" name="phone">
+              </div>
+              <div class="submit">
+                <input class="submit_btn" type="submit" id="form_submit_btn" value="Отправить">
+                <div class="checkboxes">
+                  <div class="checkbox_container">
+                    <input type="checkbox" id="checkbox_self_information">
+                    <label>Я даю согласие на отправку личной информации</label>
+                  </div>
+                  <div class="checkbox_container">
+                    <input type="checkbox" id="checkbox_privacy_policy">
+                    <label>Я согласен с <a target="_blank" href="https://telegra.ph/Publichnaya-oferta-Pravila-uchastiya-v-programme-loyalnosti-TOCHKATAXIBonus-11-21">публичной офертой</a></label>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="socials wow fadeInUp">
+        <div class="footer_logo">
+          <img src="img/svg (7).svg" alt="">
+        </div>
+        <div class="socials_wrapper df">
+          <a href="https://t.me/UklonPartner_uz" class="social df">
+            <img src="img/Vector (1).svg" alt="">
+          </a>
+          <a href="https://www.instagram.com/uklondriver_uz/" class="social df">
+            <img src="img/Vector (2).svg" alt="">
+          </a>
+          <a href="https://www.facebook.com/people/Uklon-Driver-UZ/100093210916236/" class="social df">
+            <img src="img/Vector (3).svg" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="footer_devider"></div>
+      <div class="footer_menu wow fadeInUp">
+        <ul class="df">
+          <li><a href="#main_banner">Главная</a></li>
+          <li><a href="#cards_section">Почему мы</a></li>
+          <li><a href="#promo_section">Акции</a></li>
+          <li><a href="#questions_section">FAQ</a></li>
+          <li><a href="#contacts_section">Контакты</a></li>
+        </ul>
+        <a class="policy" href="https://telegra.ph/Publichnaya-oferta-Pravila-uchastiya-v-programme-loyalnosti-TOCHKATAXIBonus-11-21">Политика обработки данных</a>
+      </div>
+    </div>
+    <div class="footer_info df">
+      <p>Uklon | Copyright 2023. All Rigths Reserved </p>
+    </div>
+  </footer>
+
+  <!-- ============================================== -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="js/parallax.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
